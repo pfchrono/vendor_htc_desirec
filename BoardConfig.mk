@@ -53,4 +53,4 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_KERNEL_BASE := 0x11200000
 
 USE_CAMERA_STUB := false
-BOARD_EGL_CFG := vendor/htc/dream_sapphire/egl.cfg
+BOARD_EGL_CFG := vendor/htc/desirec/egl.cfg

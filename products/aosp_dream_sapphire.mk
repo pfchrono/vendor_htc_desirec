@@ -22,13 +22,13 @@ PRODUCT_NAME := aosp_dream_sapphire
 
 # Which actual hardware this is based on (this is a path under vendor/)
 PRODUCT_MANUFACTURER := htc
-PRODUCT_DEVICE := dream_sapphire
+PRODUCT_DEVICE := droid eris
 
 # The user-visible product name
-PRODUCT_MODEL := AOSP on Dream/Sapphire
+PRODUCT_MODEL := desirec
 
 # Pick up some dream-US-specific settings (gps and voice settings for US).
-include vendor/htc/dream_sapphire/device.mk
+include vendor/htc/desirec/device.mk
 
 # Pick up some sounds
 include frameworks/base/data/sounds/OriginalAudio.mk

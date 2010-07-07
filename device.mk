@@ -1,6 +1,6 @@
 # Build configuration for AOSP on Dream & Sapphire
 $(call inherit-product, build/target/product/generic.mk)
-include vendor/htc/dream_sapphire/device_dream_sapphire.mk
+include vendor/htc/desirec/device_desirec.mk
 
 PRODUCT_PACKAGES += \
     DeskClock \
@@ -12,14 +12,14 @@ PRODUCT_PACKAGES += \
     VoiceDialer 
 
 # How this product is called in the build system
-PRODUCT_NAME := aosp_dream_sapphire
+PRODUCT_NAME := desirec
 
 # Which actual hardware this is based on (this is a path under vendor/)
 PRODUCT_BRAND := htc
-PRODUCT_DEVICE := dream_sapphire
+PRODUCT_DEVICE := desirec
 
 # The user-visible product name
-PRODUCT_MODEL := Dream/Sapphire
+PRODUCT_MODEL := droid-eris
 PRODUCT_MANUFACTURER := HTC
 
 # Pick up some sounds

@@ -14,7 +14,7 @@ adb pull /system/etc/firmware/brf6350.bin proprietary/brf6350.bin
 adb pull /system/etc/AudioPara4.csv proprietary/AudioPara4.csv
 adb pull /system/etc/AudioFilter.csv proprietary/AudioFilter.csv
 adb pull /system/etc/AudioPreProcess.csv proprietary/AudioPreProcess.csv
-
+adb pull /system/usr/keychars/desirec-keypad.kcm.bin proprietary/desirec-keypad.kcm.bin
 adb pull /system/lib/egl/libGLES_qcom.so proprietary/libGLES_qcom.so
 
 adb pull /system/lib/libaudioeq.so proprietary/libaudioeq.so

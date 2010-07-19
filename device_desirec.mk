@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2009 The Android Open-Source Project
+# Copyright (C) 2008 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,38 +14,22 @@
 # limitations under the License.
 #
 
-# To be included directly by a product makefile; do not use inherit-product.
+DEVICE_PACKAGE_OVERLAYS := device/htc/desirec/overlay
 
-DEVICE_PACKAGE_OVERLAYS := vendor/htc/desirec/overlay
-
-NO_DEFAULT_SOUNDS := true
+PRODUCT_PACKAGES := \
+    sensors.desirec
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=DonMessWivIt.ogg \
-    ro.config.notification_sound=pixiedust.ogg \
-    ro.config.alarm_alert=Alarm_Classic.ogg \
-    ro.com.android.wifi-watchlist=GoogleGuest \
-    ro.setupwizard.enterprise_mode=1 \
-    ro.com.android.dateformat=MM-dd-yyyy \
-    ro.com.android.dataroaming=false \
-    ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
-    ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
-    ro.com.google.clientidbase=android-google \
-    keyguard.no_require_sim=true \
-    ro.setupwizard.mode=OPTIONAL \
-    net.bt.name=Android \
-    ro.com.google.locationfeatures=1 \
-    ro.com.google.gmsversion=2.1_r1 \
-    ro.config.sync=yes \
-    dalvik.vm.stack-trace-file=/data/anr/traces.txt \
-    dalvik.vm.execution-mode=int:jit
+    ro.telephony.default_network=4
+    rild.libpath=/system/lib/libhtc_ril.so
 
-ifeq ($(WITH_WINDOWS_MEDIA),true)
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.media.dec.aud.wma.enabled=1 \
-        ro.media.dec.vid.wmv.enabled=1
-else
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.media.dec.aud.wma.enabled=0 \
-        ro.media.dec.vid.wmv.enabled=0
-endif
+
+# proprietary side of the device
+$(call inherit-product-if-exists, vendor/htc/desirec/device_desirec-vendor.mk)
+
+# bits that are shared between dream and sapphire
+#$(call inherit-product, device/htc/desirec/boot/Android.mk)
+
+# stuff common to all HTC phones
+$(call inherit-product, device/htc/common/common_small.mk)
+

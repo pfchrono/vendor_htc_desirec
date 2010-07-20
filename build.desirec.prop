@@ -1,12 +1,7 @@
 ro.product.model=HTC Droid Eris
-ro.product.brand=htc
+ro.product.brand=verizon
 ro.product.name=desirec
 ro.product.device=desirec
 ro.product.board=msm7600
 # ro.build.product is obsolete; use ro.product.device
 ro.build.product=desirec
-
-# CDMA
-ro.telephony.default_network=4
-
-

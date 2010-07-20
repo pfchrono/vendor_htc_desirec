@@ -24,5 +24,4 @@ $(call inherit-product, device/htc/desirec/device_desirec_us.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic.mk)
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := Droid Eris
 PRODUCT_DEVICE := desirec

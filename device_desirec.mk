@@ -20,6 +20,10 @@ PRODUCT_PACKAGES := \
     sensors.desirec
 
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.ril.htcmaskw1.bitmask = 4294967295
+    ro.ril.htcmaskw1 = 268449905
+    ro.com.android.dataroaming = true
+    ro.com.google.locationfeatures = 1
     ro.telephony.default_network=4
     rild.libpath=/system/lib/libhtc_ril.so
 

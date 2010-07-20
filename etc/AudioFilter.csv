@@ -1,4 +1,4 @@
-Header,HeroC_HTC_20090512
+Header,DesireC_HTC_20090512
 Header,Mode,Band Ncoeff1,Band NCoeff2,Band NCoeff3,Band NCoeff4,Band NCoeff5,Band NCoeff6,Band NCoeff7,Band NCoeff8,Band NCoeff9,Band NCoeff10,Band NCoeff11,Band NCoeff12,Band NCoeff13,Band NCoeff14,Band NCoeff15,Band NCoeff16,Band NCoeff17,Band NCoeff18,Band NCoeff19,Band NCoeff20,Band NCoeff21,Band NCoeff22,Band NCoeff23,Band NCoeff24,Band MCoeff1,Band MCoeff2,Band MCoeff3,Band MCoeff4,Band MCoeff5,Band MCoeff6,Band MCoeff7,Band MCoeff8,Band MCoeff9,Band MCoeff10,Band MCoeff11,Band MCoeff12,Band MCoeff13,Band MCoeff14,Band MCoeff15,Band MCoeff16,SF1,SF2,SF3,SF4,CS1,CS2,CS3,CS4,enable,Number of Band
 A1,AUDFMT IIR,15E7,E95B,1379,A5AF,15E7,E95B,3D3A,D564,8596,3D3D,3D3A,D564,4000,0000,8048,77E2,4000,0000,4000,0000,0000,0000,0000,0000,EF33,58BE,1016,1FA8,8400,7974,3C1D,D204,81FC,F0B7,3E5D,2004,0000,0000,0000,0000,0002,0002,0002,0002,0000,0000,0000,0000,FFFF,0004
 Header,Mode,Enable,compress threshold,compress slope,RMS,Attack const1,Attack const2,release const1,release const2,system delay,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

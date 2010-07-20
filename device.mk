@@ -15,11 +15,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_NAME := desirec
 
 # Which actual hardware this is based on (this is a path under vendor/)
-PRODUCT_BRAND := htc
+PRODUCT_BRAND := verizon
 PRODUCT_DEVICE := desirec
 
 # The user-visible product name
-PRODUCT_MODEL := droid-eris
+PRODUCT_MODEL := Droid Eris
 PRODUCT_MANUFACTURER := HTC
 
 # Pick up some sounds

@@ -11,16 +11,8 @@ ro.telephony.default_network=4
 ro.cdma.home.operator.numeric = 310012
 ro.cdma.home.operator.alpha = Verizon
 
-gsm.sim.operator.numeric = 0
-gsm.sim.operator.alpha = 0
-gsm.sim.operator.iso-country = 0
-
 wifi.interface=tiwlan0
 wifi.supplicant_scan_interval=15
-
-# RIL settings
-ro.ril.gprsclass=10
-ro.ril.hsxpa=1
 
 # Media settings
 ro.media.enc.file.format       = 3gp,mp4
@@ -34,3 +26,5 @@ ro.media.enc.vid.m4v.height    = 144,288
 ro.media.enc.vid.m4v.bps       = 64000,800000
 ro.media.enc.vid.m4v.fps       = 1,30
 
+# Disable HTC checkin service.
+ro.config.htc.nocheckin=1

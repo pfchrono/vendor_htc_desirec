@@ -45,6 +45,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := desirec	
+PRODUCT_NAME := cyanogen_desirec	
 PRODUCT_DEVICE := desirec
 PRODUCT_MODEL := Droid Eris

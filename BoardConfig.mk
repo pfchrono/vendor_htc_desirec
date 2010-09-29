@@ -52,3 +52,6 @@ SKIP_PRELINK_LIBAUDIO := true
 TARGET_RECOVERY_UI_LIB := librecovery_ui_desirec librecovery_ui_htc
 
 include device/htc/desirec/BoardConfigCommon.mk
+
+PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=\$(TOP)/device/htc/desirec/prelink-linux-arm-desirec.map
+

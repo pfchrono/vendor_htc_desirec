@@ -26,7 +26,7 @@ USE_CAMERA_STUB := true
 
 TARGET_BOARD_PLATFORM := msm7k
 TARGET_BOARD_PLATFORM_GPU := qcom
-TARGET_ARCH_VARIANT := armv6
+TARGET_ARCH_VARIANT := armv6j
 TARGET_CPU_ABI := armeabi
 TARGET_BOOTLOADER_BOARD_NAME := desirec 
 TARGET_OTA_ASSERT_DEVICE := desirec 
@@ -42,6 +42,9 @@ WIFI_DRIVER_MODULE_ARG      := ""
 WIFI_DRIVER_MODULE_NAME     := "wlan"
 WIFI_FIRMWARE_LOADER        := "wlan_loader"
 
+# Use HTC USB Function Switch to enable tethering via USB
+BOARD_USE_HTC_USB_FUNCTION_SWITCH := true
+
 TARGET_BOOTLOADER_LIBS := \
 	libboot_board_desirec \
 	libboot_arch_msm7k \
@@ -56,7 +59,7 @@ BOARD_HAVE_BLUETOOTH := true
 
 BOARD_VENDOR_USE_AKMD := akm8973
 
-BOARD_VENDOR_QCOM_AMSS_VERSION := 6220
+BOARD_VENDOR_QCOM_AMSS_VERSION := 4410
 
 # The size of a block that can be marked bad.
 BOARD_FLASH_BLOCK_SIZE := 131072

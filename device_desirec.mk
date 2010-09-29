@@ -28,6 +28,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/system/lib/libhtc_ril.so
 
 
+# wlan.ko and tun.ko
+PRODUCT_COPY_FILES += \
+    vendor/htc/desirec/wlan.ko:system/lib/modules/wlan.ko \
+    vendor/htc/desirec/tun.ko:system/lib/modules/tun.ko \
+    vendor/htc/desirec/lights.sh:system/etc/lights.sh
+
 # proprietary side of the device
 $(call inherit-product-if-exists, vendor/htc/desirec/device_desirec-vendor.mk)
 
